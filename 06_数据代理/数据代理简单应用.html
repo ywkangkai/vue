@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    let obj1 = {x:100}
+    let obj2 = {y:100}
+    Object.defineProperty(obj2, 'x',{
+        get(){
+            return obj1.x   //表示要读取obj2中的x属性时，将obj1的x值返回
+        },
+        set(value){
+            obj1.x = value  //表示要修改obj2的x属性时，同时也把obj1的x属性值也改掉
+        }
+    })
+</script>
+</body>
+</html>
