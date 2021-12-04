@@ -24,7 +24,7 @@
 			姓：<input type="text" v-model="firstName"> <br/><br/>
 			名：<input type="text" v-model="lastName"> <br/><br/>
 			测试：<input type="text" v-model="x"> <br/><br/>
-			全名：<span>{{fullName}}</span> <br/><br/>
+			全名：<h1>{{fullName}}</h1> <br/><br/>
 			<!-- 全名：<span>{{fullName}}</span> <br/><br/>
 			全名：<span>{{fullName}}</span> <br/><br/>
 			全名：<span>{{fullName}}</span> -->
@@ -47,23 +47,10 @@
 				}
 			},
 			computed:{
-				fullName:{
-					//get有什么作用？当有人读取fullName时，get就会被调用，且返回值就作为fullName的值
-					//get什么时候调用？1.初次读取fullName时。2.所依赖的数据发生变化时。
-					get(){
-						console.log('get被调用了')
-						// console.log(this) //此处的this是vm
-						return this.firstName + '-' + this.lastName
-					},
-					//set什么时候调用? 当fullName被修改时。
-					set(value){
-						console.log('set',value)
-						const arr = value.split('-')
-						this.firstName = arr[0]
-						this.lastName = arr[1]
-					}
+				fullName(){
+					return this.firstName + '-' + this.lastName
 				}
-			}
+			},
 		})
 	</script>
 </html>
