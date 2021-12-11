@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 准备好一个容器-->
+<div id="root">
+    <h2>人员列表</h2>
+    <input type="text" placeholder="请输入名字" v-model="keyWord">
+    <button @click="sorttype = 0">列表原序</button>
+    <button @click="sorttype = 2">年龄升序</button>
+    <button @click="sorttype = 1">年龄降序</button>
+    <ul>
+        <li v-for="(p,index) of filPerons" :key="p.id">
+            {{p.name}}-{{p.age}}-{{p.sex}}
+        </li>
+    </ul>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script type="text/javascript">
+    Vue.config.productionTip = false
+    new Vue({
+        el: '#root',
+        data: {
+            keyWord:'',
+            sorttype: 0, //0原顺序 2降序 1升序
+            persion: [
+                {id:'001',name:'马冬梅',age:30,sex:'女'},
+                {id:'002',name:'周冬雨',age:25,sex:'女'},
+                {id:'003',name:'周杰伦',age:21,sex:'男'},
+                {id:'004',name:'温兆伦',age:18,sex:'男'}
+            ],
+        },
+        computed:{
+            filPerons(){
+                const arr = this.persion.filter((p)=>{
+                    return p.name.indexOf(this.keyWord) !== -1
+                    
+                })
+                if (this.sorttype){
+                    arr.sort((p1,p2)=>{
+                        return this.sorttype ===1 ? p2.age - p1.age : p1.age - p2.age
+                    })
+                }
+                return arr
+            }
+
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- 准备好一个容器-->
+<div id="root">
+    <h2>人员列表</h2>
+    <input type="text" placeholder="请输入名字" v-model="keyWord">
+    <ul>
+        <li v-for="(p,index) of filPerons" :key="index">
+            {{p.name}}-{{p.age}}-{{p.sex}}
+        </li>
+    </ul>
+</div>
+</body>
+<script src="../js/vue.js"></script>
+<script type="text/javascript">
+    Vue.config.productionTip = false
+    new Vue({
+        el: '#root',
+        data: {
+            keyWord:'',
+            persion: [
+                {id:'001',name:'马冬梅',age:19,sex:'女'},
+                {id:'002',name:'周冬雨',age:20,sex:'女'},
+                {id:'003',name:'周杰伦',age:21,sex:'男'},
+                {id:'004',name:'温兆伦',age:22,sex:'男'}
+            ],
+            filPerons:[]
+        },
+        watch:{
+            keyWord: {
+                immediate: true,  //启动就会默认调用一次，因为没有传入参数，则以空字符串传入，会查询到所有
+                handler(val){
+                    this.filPerons = this.persion.filter((p)=>{
+                        //indexOf(val)查询成功则返回该元素的索引
+                        //查询失败返回-1
+                        //当查询为true返回数据否则不返回数据
+                        return p.name.indexOf(val) !== -1
+                        //return p.name.indexOf('') !== -1 当传入空字符串是默认查询所有，上面的深度监视就是利用这一点
+                    })
+                }
+            }
+        }
+
+    })
+</script>
+</html>

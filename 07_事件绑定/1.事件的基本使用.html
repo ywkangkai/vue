@@ -19,7 +19,7 @@
 		<div id="root">
 			<h2>欢迎来到{{name}}学习</h2>
 			<!-- <button v-on:click="showInfo">点我提示信息</button> -->
-			<button @click="showInfo1">点我提示信息1（不传参）</button> //@是简写，
+			<button @click="showInfo1">点我提示信息1（不传参）</button> <!--//@是简写，-->
 			<button @click="showInfo2($event,66)">点我提示信息2（传参）</button> //当需要传参时第一个位置写$event,不然会把内置的event参数给覆盖掉
 		</div>
 	</body>
