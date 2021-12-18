@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+<body>
+<div id="root">
+<!--<h2 v-bind:style="{opacity: opacity}"></h2>-->
+<!-- 如果是css表达的方式需要写为对象,第一个opacity是css的属性，第二个vue中值   -->
+    <h2 v-bind:style="{opacity}">vue生命周期</h2>  <!-- 当vue中的值写为与css属性值一样时可以简写 -->
+</div>
+</body>
+<script type="text/javascript">
+    Vue.config.productionTip = false
+    new Vue({
+        el: '#root',
+        data: {
+            opacity: 1
+        },
+        mounted(){
+            setInterval(()=>{
+                this.opacity = this.opacity-0.01
+                if (this.opacity <= 0){
+                    this.opacity = 1
+                }
+            },16)
+        }
+    })
+</script>
+</html>

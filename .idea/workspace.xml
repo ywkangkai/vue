@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42f1b37d-e5e1-419c-9f8d-c1454b6c6564" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/14_过滤器/过滤器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_内置指令/1.v-text_指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_内置指令/2.v-html_指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_内置指令/3.v-cloak_指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_内置指令/4.v-once_指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_内置指令/5.v-pre_指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_自定义指令/1.自定义指令.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_自定义指令/1.自定义指令1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_自定义指令/2.自定义指令2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_生命周期/1.引出生命周期.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_生命周期/2.分析生命周期.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_生命周期/3.总结生命周期.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_收集表单数据/收集表单数据.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_收集表单数据/收集表单数据.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21BN2TUzwNkVxZbtLL8VJqGXlK0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\vue" />
+      <recent name="D:\vue\16_自定义指令" />
+      <recent name="D:\vue\15_内置指令" />
+      <recent name="D:\vue\12_列表渲染" />
+      <recent name="D:\vue\列表渲染" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42f1b37d-e5e1-419c-9f8d-c1454b6c6564" name="Default Changelist" comment="" />
+      <created>1637410316452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637410316452</updated>
+      <workItem from="1637410318153" duration="2209000" />
+      <workItem from="1637479395131" duration="4643000" />
+      <workItem from="1637540725529" duration="667000" />
+      <workItem from="1637977382853" duration="5223000" />
+      <workItem from="1638064008043" duration="4986000" />
+      <workItem from="1638232627724" duration="2115000" />
+      <workItem from="1638318686262" duration="2018000" />
+      <workItem from="1638320976045" duration="610000" />
+      <workItem from="1638491896278" duration="2519000" />
+      <workItem from="1638500430875" duration="5000" />
+      <workItem from="1638584900463" duration="5544000" />
+      <workItem from="1638663884633" duration="5201000" />
+      <workItem from="1638752008260" duration="2204000" />
+      <workItem from="1638762253862" duration="5000" />
+      <workItem from="1638838569781" duration="1683000" />
+      <workItem from="1639099246098" duration="2128000" />
+      <workItem from="1639119385100" duration="599000" />
+      <workItem from="1639123163989" duration="2000" />
+      <workItem from="1639188607213" duration="5292000" />
+      <workItem from="1639315778492" duration="747000" />
+      <workItem from="1639356884506" duration="731000" />
+      <workItem from="1639443340649" duration="1464000" />
+      <workItem from="1639573249296" duration="2841000" />
+      <workItem from="1639697540386" duration="2595000" />
+      <workItem from="1639746766848" duration="674000" />
+    </task>
+    <task id="LOCAL-00001" summary="计算属性与监视属性">
+      <created>1638584931185</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1638584931185</updated>
+    </task>
+    <task id="LOCAL-00002" summary="列表渲染">
+      <created>1639193663787</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639193663787</updated>
+    </task>
+    <task id="LOCAL-00003" summary="收集表单数据">
+      <created>1639194222681</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639194222681</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="计算属性与监视属性" />
+    <MESSAGE value="列表渲染" />
+    <MESSAGE value="收集表单数据" />
+    <option name="LAST_COMMIT_MESSAGE" value="收集表单数据" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1639194221803">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1639194221803" />
+    <state x="232" y="71" key="Vcs.Push.Dialog.v2" timestamp="1638585018515">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="232" y="71" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1638585018515" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1638066898387">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1638066898387" />
+  </component>
+</project>
