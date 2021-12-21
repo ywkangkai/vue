@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/vue.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="root">
+
+    <br>
+</div>
+</body>
+<script type="text/javascript">
+    Vue.config.productionTip = false
+
+    const student = Vue.extend({
+        template: `
+                <div>
+                     <h2>{{name}}</h2>
+                     <h2>{{age}}</h2>
+                </div>
+        `,
+        data(){
+            return{
+                name: '老王',
+                age: '18'
+            }
+        }
+    })
+
+    const school = Vue.extend({
+        template: `
+                <div>
+                     <h2>{{name}}</h2>
+                     <h2>{{address}}</h2>
+                     <student></student>
+                </div>
+        `,
+        data(){
+            return{
+                name: '实小',
+                address: '解放路'
+            }
+        },
+        components:{
+            student: student
+        }
+    })
+
+    const hello = Vue.extend({
+        template: `
+                <div>
+                     <h2>{{msg}}</h2>
+                </div>
+        `,
+        data(){
+            return{
+               msg: '娃哈哈'
+            }
+        }
+    })
+
+    const app = Vue.extend({
+        template: `
+                <div>
+                     <school></school>
+                      <hello></hello>
+                </div>
+        `,
+        data(){
+            return{
+                msg: '娃哈哈'
+            }
+        },
+        components:{
+            school,
+            hello
+        }
+    })
+
+    new Vue({
+        el: '#root',
+        template:`<app></app>`,
+        data:{
+            a: '这是vm自己的'
+        },
+        components:{app}
+    })
+</script>
+</html>
