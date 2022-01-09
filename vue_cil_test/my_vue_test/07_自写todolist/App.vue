@@ -20,11 +20,7 @@
 		components:{MyHeader,MyFooter,MyItem,MyList},
     data(){
 		  return {
-		    todo: [
-          {'id':'001','title':'抽烟','done':false},
-          {'id':'002','title':'喝酒','done':false},
-          {'id':'003','title':'烫头','done':true}
-        ]
+		    todo: JSON.parse(localStorage.getItem('todos')) || []
       }
     },
     mounted() {
@@ -39,6 +35,14 @@
         this.todo = this.todo.filter((todos)=>{
           return todos.id !== id
         })
+      }
+    },
+    watch:{
+		  todo:{
+		    deep: true,
+		    handler(value){
+		        localStorage.setItem('todos', JSON.stringify(value))
+        }
       }
     }
   }
