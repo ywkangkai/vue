@@ -31,7 +31,7 @@
 		},
 		mounted() {
 			this.$bus.$on('updateListData',(dataObj)=>{
-				this.info = {...this.info,...dataObj}
+				this.info = {...this.info,...dataObj} //这里会做比对，传过来的对象会更新info这个对象中的value
 			})
 		},
 	}
