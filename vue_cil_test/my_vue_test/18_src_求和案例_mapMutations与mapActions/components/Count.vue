@@ -43,10 +43,10 @@
 		methods: {
 			//程序员亲自写方法
 			/* increment(){
-				this.$store.commit('JIA',this.n)
+				this.$router.commit('JIA',this.n)
 			},
 			decrement(){
-				this.$store.commit('JIAN',this.n)
+				this.$router.commit('JIAN',this.n)
 			}, */
 
 			//借助mapMutations生成对应的方法，方法中会调用commit去联系mutations(对象写法)
@@ -59,10 +59,10 @@
 
 			//程序员亲自写方法
 			/* incrementOdd(){
-				this.$store.dispatch('jiaOdd',this.n)
+				this.$router.dispatch('jiaOdd',this.n)
 			},
 			incrementWait(){
-				this.$store.dispatch('jiaWait',this.n)
+				this.$router.dispatch('jiaWait',this.n)
 			}, */
 
 			//借助mapActions生成对应的方法，方法中会调用dispatch去联系actions(对象写法)

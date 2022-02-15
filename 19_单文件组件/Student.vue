@@ -1,7 +1,7 @@
 <template>
   <div class="demo">
     <h2>姓名：{{Name}}</h2>
-    <h2>年龄：{{address}}</h2>
+    <h2>年龄：{{age}}</h2>
   </div>
 </template>
 

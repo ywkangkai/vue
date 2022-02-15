@@ -484,7 +484,7 @@ module.exports = {
    ```js
    ......
    //引入store
-   import store from './store'
+   import store from './router'
    ......
    
    //创建vm
@@ -975,7 +975,7 @@ module.exports = {
 2. 具体编码：
 
    ```vue
-   <keep-alive include="News"> 
+   <keep-alive include="News">    注意“News”是具体组件中name的名字
        <router-view></router-view>
    </keep-alive>
    ```
@@ -1065,5 +1065,12 @@ module.exports = {
    1. 地址干净，美观 。
    2. 兼容性和hash模式相比略差。
    3. 应用部署上线时需要后端人员支持，解决刷新页面服务端404的问题。
+   
+
+
 	 
-	 
+### 14.element-ui的使用
+
+1.安装
+   npm i element-ui
+   npm install babel-plugin-component -D

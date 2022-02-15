@@ -7,7 +7,7 @@
 </template>
 
 <script>
-export default {  //Vue.extend
+export default {  //省略了Vue.extend
   name: 'School',
   data(){
     return {

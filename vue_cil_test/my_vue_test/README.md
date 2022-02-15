@@ -484,7 +484,7 @@ module.exports = {
    ```js
    ......
    //引入store
-   import store from './store'
+   import store from './router'
    ......
    
    //创建vm
